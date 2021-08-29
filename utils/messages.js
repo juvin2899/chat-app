@@ -7,6 +7,8 @@ const formatMessage = (text,username="ChatApp Bot") => {
 };
 
 function formatAMPM(date) {
+  date.setHours(date.getHours() + 5); 
+  date.setMinutes(date.getMinutes() + 30);
   var hours = date.getHours();
   var minutes = date.getMinutes();
   var ampm = hours >= 12 ? "pm" : "am";
