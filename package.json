@@ -1,0 +1,17 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "socket.io implementation",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "prod":"node server",
+    "heroku-postbuild": "npm install"
+  },
+  "author": "Juvin Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3"
+  }
+}
